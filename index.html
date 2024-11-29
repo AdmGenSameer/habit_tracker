@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Habit Tracker</h1>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-switch">
+                <label for="theme-switch" class="theme-switch-label">
+                    <span class="theme-icon moon">🌙</span>
+                    <span class="theme-icon sun">☀️</span>
+                </label>
+            </div>
+        </header>
+
+        <section class="habit-input-section">
+            <input type="text" id="habit-input" placeholder="Enter a new habit">
+            <button id="add-habit-btn">Add Habit</button>
+        </section>
+
+        <section id="habits-container" class="habits-container">
+            <!-- Habits will be dynamically added here -->
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
